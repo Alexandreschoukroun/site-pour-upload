@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to top right, #BA55D3 50%, #1E90FE 100%);
+
+}
+
+
+
+
+.drag-image {
+    color: #fff;
+    height: 300px;
+    width: 350px;
+    border-radius: 30px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #1E90FF, #1E90FE, #BA55D3, #BA55D8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+}
+
+.drag-image svg {
+    height: 60px;
+    fill: #fff;
+}
+
+
+
+thead {
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.drag-image.active {
+    border: 2px solid #fff;
+}
+
+.drag-image .icon {
+    font-size: 30px;
+    color: #fff;
+}
+
+.drag-image h6 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.drag-image span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    margin: 10px 0 15px 0;
+}
+
+.drag-image button {
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s;
+    margin: 10px 0 15px 0;
+}
+
+.drag-image input {
+    padding: 10px 10px;
+    font-size: 11px;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.drag-image input:hover {
+    background-color: #fff;
+    color: #BA55D3;
+}
+
+.drag-image button:hover {
+    background-color: #fff;
+    color: #1E90FF;
+}
+
+.drag-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+}
+
+.file-upload {
+    position: relative;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 10px 0 15px 0;
+}
+
+.file-upload:hover {
+    background-color: #fff;
+    color: #BA55D3;
+}
